@@ -12,6 +12,7 @@ const Title = styled.span`
 `;
 
 const Background = styled(Flex)`
+  height: 100%;
   width: ${dimensions.width}px;
 
   ${(props) =>
