@@ -1,0 +1,4 @@
+orderNo;tracking_number;courier;street;zip_code;city;destination_country_iso3;email;articleNo;articleImageUrl;quantity;product_name
+ORD-123-2018;00340000161200000001;DHL;Landwehrstr. 39;80336;München;DEU;julian@parcellab.com;A-B2-U;http://cdn.parcellab.com/img/sales-cannon/parcellab-bag.jpg;1;parcelLab Tote Bag
+ORD-123-2018;00340000161200000001;DHL;Landwehrstr. 39;80336;München;DEU;julian@parcellab.com;A-C1-L;http://cdn.parcellab.com/img/sales-cannon/parcellab-cap.jpg;2;parcelLab Branded Cap
+780XX004;00331612197202003141;DHL;Schillerstr. 23a;10625;Berlin;DEU;julian@parcellab.com;;;;
