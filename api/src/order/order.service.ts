@@ -1,13 +1,13 @@
 import { InternalServerErrorException, Injectable } from '@nestjs/common';
-import { getOrders, getOrder } from '../mockData/mockDB';
+import { getOrdersOverview, getOrder } from '../data';
 
 @Injectable()
 export class OrderService {
   constructor() {}
 
-  async getJoinedOrders() {
+  async getJoinedOrders(email) {
     try {
-      return await getOrders();
+      return await getOrdersOverview(email);
     } catch {
       throw new InternalServerErrorException();
     }
