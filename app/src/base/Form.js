@@ -7,7 +7,11 @@ import Card from "./Card";
 import { colors, dimensions } from "./constants";
 
 const rules = [
-  { required: true, message: "Please provide your email address. 😇" },
+  {
+    type: "email",
+    message: "The input is not a valid E-mail.",
+  },
+  { required: true, message: "Please provide your email address." },
 ];
 
 const OrderButton = styled(Button)`
