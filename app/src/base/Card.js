@@ -1,19 +1,23 @@
 import styled, { css } from "styled-components";
 import { Space } from "antd";
 
-import { colors, dimensions } from "./constants";
+import { colors } from "./constants";
 import Flex from "./Flex";
 
 const Title = styled.span`
   background: ${colors.primary};
+  color: ${colors.back};
   font-size: 20px;
   font-style: italic;
   padding: 0 5px;
 `;
 
 const Background = styled(Flex)`
-  height: 100%;
-  width: ${dimensions.width}px;
+  ${(props) =>
+    props.width &&
+    css`
+      width: ${props.width};
+    `};
 
   ${(props) =>
     props.onClick &&
@@ -26,7 +30,7 @@ const Background = styled(Flex)`
     `};
 
   background: ${colors.back};
-  color: #fff;
+  color: ${colors.tertiary};
 
   border-radius: 5px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
@@ -38,7 +42,7 @@ const Background = styled(Flex)`
 `;
 
 const Card = ({ children, title, width, onClick }) => (
-  <Background width={width} onClick={onClick} end>
+  <Background width={width} onClick={onClick} end wrap>
     <Space direction="vertical">
       {title && <Title>{title}</Title>}
       {children}

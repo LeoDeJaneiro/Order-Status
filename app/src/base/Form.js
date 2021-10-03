@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import Flex from "./Flex";
 import Card from "./Card";
-import { colors } from "./constants";
+import { colors, dimensions } from "./constants";
 
 const rules = [
   { required: true, message: "Please provide your email address. 😇" },
@@ -30,7 +30,7 @@ const MailForm = ({ setUser }) => {
   );
 
   return (
-    <Card title="Who are you?">
+    <Card title="Who are you?" width={dimensions.width}>
       <Form onFinish={submit}>
         <Form.Item name="email" rules={rules}>
           <Input size="large" placeholder="email address" allowClear />

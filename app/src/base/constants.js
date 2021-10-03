@@ -8,8 +8,18 @@ const colors = {
 };
 
 const dimensions = {
-  margin: 10,
-  width: 300,
+  margin: "10px",
+  width: "300px",
 };
 
-export { colors, dimensions };
+const emojis = {
+  OrderProcessed: "📦",
+  Upgrade: "⚙️",
+  InboundScan: "👩🏽‍🚀",
+  PickUpPlanned: "📯",
+  DestinationDeliveryCenter: "🏤",
+  Scheduled: "⏱",
+  fallback: "⏳",
+};
+
+export { colors, dimensions, emojis };
