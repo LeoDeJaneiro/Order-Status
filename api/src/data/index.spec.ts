@@ -1,4 +1,4 @@
-import { getOrdersOverview, getOrder, getCheckpointsOfTracking } from './index';
+import { getOrdersOverview, getOrder } from './index';
 import trackings from './__mocks/trackings';
 import checkpoints from './__mocks/checkpoints';
 
@@ -62,7 +62,7 @@ describe('data', () => {
   });
 
   describe('getOrder', () => {
-    it('should return grouped orders incl list of trackings and their last checkpoint', async () => {
+    it('should return order incl products and trackings', async () => {
       expect(await getOrder('ORD-123-2018')).toEqual({
         tracking: {
           '00340000161200000001': [

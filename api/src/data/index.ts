@@ -65,9 +65,4 @@ const getOrder = async (orderNo) => {
     .value();
 };
 
-const getCheckpointsOfTracking = async (tracking_number) => {
-  const checkpoints = await preProcessCheckpoints();
-  return get(checkpoints, tracking_number);
-};
-
-export { getOrdersOverview, getOrder, getCheckpointsOfTracking };
+export { getOrdersOverview, getOrder };

@@ -9,7 +9,7 @@ async function bootstrap() {
   app.use(helmet());
   app.use(
     cors({
-      origin: process.env.FRONTEND_HOST,
+      origin: process.env.FRONTEND_HOST || 'http://localhost:3000',
     }),
   );
 

@@ -1,15 +1,13 @@
 {
   "name": "app",
   "version": "0.1.0",
-  "private": true,
+  "author": "Leonard Schurbert",
+  "license": "MIT",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@mui/material": "^5.0.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "antd": "^4.16.13",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
