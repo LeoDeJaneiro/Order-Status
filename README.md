@@ -1,6 +1,10 @@
-# Order Status APP
+# Order Status - React/NestJs
 
-The prototype lists orders of an user and the potentially multiple trackings which belong to each of the orders.
+![order-status](https://user-images.githubusercontent.com/38670508/143863724-ea0e1f37-47f3-4a76-b5ba-3a48bd5fb152.gif)
+
+This App was developed as coding challenge. The requirements were
+- to provide and API which reads data from given CSV files
+- to lists orders (and their trackings) in a React app
 
 ## Running the api
 
